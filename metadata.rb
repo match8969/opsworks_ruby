@@ -10,7 +10,7 @@ version '1.15.0'
 chef_version '~> 12.0' if respond_to?(:chef_version)
 
 # depends 'apt', '< 7.0'
-depends 'nginx'
+depends 'chef_nginx' # depends 'nginx'
 depends 'logrotate'
 depends 'ruby-ng'
 depends 's3_file'
@@ -22,6 +22,9 @@ depends 'yarn'
 depends 'seven_zip', '~> 2.0'
 # indirect dependency required to maintain compatibility with chef 12
 depends 'windows', '< 5.0'
+
+# 必要かも
+# depends 'deployer'
 
 supports 'amazon', '>= 2017.03'
 supports 'ubuntu', '>= 16.04'
