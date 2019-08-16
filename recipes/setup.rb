@@ -5,7 +5,7 @@
 # Recipe:: setup
 #
 
-include_recipe 'apt'
+# include_recipe 'apt'
 
 prepare_recipe
 
